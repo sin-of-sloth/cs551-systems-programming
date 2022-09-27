@@ -1,3 +1,9 @@
+/********************************************************************
+*   THIS CODE IS MY OWN WORK, IT WAS WRITTEN WITHOUT CONSULTING     *
+*   A TUTOR OR CODE WRITTEN BY OTHER STUDENTS                       *
+*                               - ARJUN LAL                         *
+********************************************************************/
+
 #include "pbm.h"
 #include <stdio.h>
 #include <getopt.h>
