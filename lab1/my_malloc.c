@@ -1,3 +1,10 @@
+/********************************************************************
+*   THIS CODE IS MY OWN WORK, IT WAS WRITTEN WITHOUT CONSULTING     *
+*   A TUTOR OR CODE WRITTEN BY OTHER STUDENTS                       *
+*                               - ARJUN LAL                         *
+********************************************************************/
+
+
 #include<stddef.h>
 #include<unistd.h>
 #include "my_malloc.h"
