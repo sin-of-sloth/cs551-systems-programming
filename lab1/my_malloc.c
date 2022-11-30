@@ -20,6 +20,7 @@
 
 
 FreeListNode freelistbase = NULL;
+MyErrorNo my_errno = MYNOERROR;
 
 
 //free_list_begin(): returns pointer to first chunk in free list
@@ -147,7 +148,7 @@ void insert_node_in_freelist(FreeListNode fnode) {
 
 //my_malloc: returns a pointer to a chunk of heap allocated memory
 void *my_malloc(size_t size) {
-    MyErrorNo my_errno = MYNOERROR;
+    my_errno = MYNOERROR;
     if(size < 1) {
         my_errno = MYENOMEM;
         return NULL;
@@ -181,7 +182,7 @@ void *my_malloc(size_t size) {
 
 // my_free: reclaims the previously allocated chunk referenced by ptr
 void my_free(void *ptr) {
-    MyErrorNo my_errno = MYNOERROR;
+    my_errno = MYNOERROR;
     if(ptr == NULL) {
         my_errno = MYBADFREEPTR;
         return;
